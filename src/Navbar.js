@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link to="/" className="navbar-logo">
+        <Link to="/vibha_gupta/" className="navbar-logo">
         <i class="fa-solid fa-user"></i>
         <span className="logo-text">Vibha Gupta</span>
         </Link>
