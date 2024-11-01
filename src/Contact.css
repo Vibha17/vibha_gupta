@@ -1,0 +1,123 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #3C6E71;
+}
+
+.contact-left {
+    width: 40%;
+    padding: 20px;
+    color: white;
+}
+
+.contact-left p {
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.contact-left h1 {
+    margin-bottom: 2rem;
+    color:#D9D9D9;
+    text-align: left;
+    margin-bottom: 10px;
+    overflow: hidden;
+  white-space: nowrap; 
+  animation: typing 3.5s steps(40, end) ;
+}
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+.contact-right {
+    width: 50%;
+    padding: 20px;
+    background-color: #D9D9D9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+}
+
+.contact-right h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #353535;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    margin-left: 0%;
+    margin-bottom: 15px;
+    width: 40%;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #284B63;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    background-color: #2D4B63;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-self: flex-end;
+}
+
+.submit-btn:hover {
+    background-color: #555;
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .contact-left,
+    .contact-right {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .form-group {
+        width: 100%;
+    }
+}
+
